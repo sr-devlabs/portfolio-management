@@ -11,7 +11,6 @@ This repository contains a sanitized/demo version of the full project. The origi
 1. `cd frontend`
 2. `npm install`
 3. `npm run dev`
-4. (Optional) Run mock API: `json-server --watch db.json --port 4000`
 
 ## Notes
 This is a deliberately stripped version for review and demonstration. Full source and ML model are confidential.
