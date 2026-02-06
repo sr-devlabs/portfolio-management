@@ -14,3 +14,6 @@ This repository contains a sanitized/demo version of the full project. The origi
 
 ## Notes
 This is a deliberately stripped version for review and demonstration. Full source and ML model are confidential.
+
+# screenshots
+<img width="1106" height="913" alt="image" src="https://github.com/user-attachments/assets/34ea9e14-9a89-4585-aa87-58829ae8418c" />
