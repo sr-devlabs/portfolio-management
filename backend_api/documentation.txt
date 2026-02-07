@@ -1,0 +1,44 @@
+user registration: http://localhost:8000/api/register/?Content-Type=application/json 
+post
+{
+    "username" : "SumitRajam",
+    "email" : "r210294@famt.ac.in",
+    "password" : "student",
+    "password_confirmation" : "student"
+}
+
+http://localhost:8000/api/login/ 
+post
+{
+    "email" :"r210294@famt.ac.in",
+    "password" : "student"
+}
+
+http://localhost:8000/api/verifyotp/
+post
+{
+    "email" :"r210294@famt.ac.in",
+    "otp_code" : "214012"
+}
+
+http://localhost:8000/api/profile/
+get
+(under implementation)
+
+http://localhost:8000/api/portfolio/get_user_portfolio/?email=r210294@famt.ac.in
+get
+authorization token required
+
+http://localhost:8000/api/portfolio/add_stock_to_portfolio/
+post
+authorization token required
+{
+    "user_email": "r210294@famt.ac.in",
+    "stock_name": "Ambuja Cements Ltd.",
+    "stock_ticker": "AMBUJACEM.NS"
+}
+
+http://localhost:8000/api/all_stock_names/
+get
+authorization token required
+
