@@ -1,0 +1,128 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eaecf0;
+    height: 64px;
+    padding: 0 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Brand */
+.navbar-brand {
+    letter-spacing: -0.5px;
+}
+
+/* Buttons */
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border: none;
+    padding: 0;
+}
+
+.btn-ghost {
+    background: transparent;
+}
+
+.btn-ghost:hover {
+    background-color: #f2f4f7;
+    color: #0d6efd !important;
+}
+
+/* Search Bar */
+.input-group-text {
+    border-color: #eaecf0;
+}
+
+.form-control {
+    border-color: #eaecf0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: #0d6efd;
+}
+
+/* Avatar */
+.avatar-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.dropdown-toggle-custom {
+    transition: all 0.2s ease;
+    border-color: transparent !important;
+}
+
+.dropdown-toggle-custom:hover {
+    background-color: #f2f4f7;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eaecf0;
+    transform-origin: top right;
+}
+
+.dropdown-item {
+    font-size: 0.9rem;
+    color: #475467;
+    transition: all 0.2s;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #f9fafb;
+    color: #0d6efd;
+}
+
+.dropdown-item.text-danger:hover {
+    background-color: #fef3f2;
+    color: #d92d20 !important;
+}
+
+/* Animation */
+.animate-slide-in {
+    animation: slideIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Profile Dropdown Positioning Override */
+.profile-dropdown {
+    right: 0 !important;
+    left: auto !important;
+    transform: none !important; /* Prevent bootstrap transforms from interfering */
+    margin-top: 0.5rem; /* Consistent spacing */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .custom-navbar {
+        padding: 0 1rem;
+    }
+}
