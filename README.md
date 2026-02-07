@@ -7,6 +7,8 @@ This repository contains a sanitized/demo version of the full project. The origi
 - Dashboard, watchlist, portfolio pages
 - Interactive charts populated with mock data (no external APIs)
 
+### Find SETUP_INSTRUCTIONS.md in the root directory for backend setup instructions.
+
 ## Run locally
 1. `cd frontend`
 2. `npm install`
